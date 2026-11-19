@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import { approach } from "../lib/data";
 
+const ICONS = ["✦", "◐", "◎", "◆", "▲"];
+
 export default function Approach() {
   return (
     <section className="approach">
@@ -14,7 +16,7 @@ export default function Approach() {
               whileInView={{ opacity: 1, y: 0, rotate: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ delay: i * 0.08, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
-              <p className="section-label">0{i + 1}</p>
+              <span className="approach-icon">{ICONS[i]}</span>
               <h3>{a.title}</h3>
               <p>{a.desc}</p>
             </motion.div>

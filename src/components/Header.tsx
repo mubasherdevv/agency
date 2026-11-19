@@ -30,7 +30,7 @@ export default function Header() {
     <>
       <header className={`header${scrolled ? " scrolled" : ""}${hidden ? " hidden" : ""}`}>
         <div className="container header-inner">
-          <a href="#" className="logo">mivon<span>.</span></a>
+          <a href="#" className="logo">mivon</a>
           <nav className="nav-pill">
             {MENUS.map((m) => (
               <div className="nav-item" key={m.label}>

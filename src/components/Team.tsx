@@ -1,14 +1,7 @@
 "use client";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { teamImgs } from "../lib/data";
-
-const members = [
-  { name: "Alex Morgan", role: "Creative Director", img: teamImgs[0] },
-  { name: "Sara Lee", role: "Design Lead", img: teamImgs[1] },
-  { name: "James Carter", role: "Strategy Director", img: teamImgs[2] },
-  { name: "Emma Wilson", role: "Art Director", img: teamImgs[3] },
-];
+import { teamImgs, teamPortrait } from "../lib/data";
 
 export default function Team() {
   const ref = useRef<HTMLDivElement>(null);
@@ -17,28 +10,40 @@ export default function Team() {
   return (
     <section className="team" ref={ref}>
       <div className="container">
-        <p className="section-label">Our People</p>
-        <h2>MEET OUR TEAM.</h2>
-        <p className="lead">Each member of our team brings a unique set of skills and perspectives, blending together to forge a collective that thrives on pushing the boundaries.</p>
-        <div className="team-grid">
-          {members.map((m, i) => (
-            <motion.article key={m.name} className="team-card"
-              initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }} transition={{ delay: i * 0.1, duration: 0.6 }}>
-              <div className="img-wrap"><motion.img src={m.img} alt={m.name} loading="lazy" style={{ y }} /></div>
-              <div className="meta"><h3>{m.name}</h3><div className="role">{m.role}</div></div>
-            </motion.article>
-          ))}
+        <div className="team-top">
+          <div className="team-top-left">
+            <p className="section-label">• Our Team</p>
+            <div className="avatar-stack">
+              {teamImgs.map((src, i) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img key={i} src={src} alt="Team member" loading="lazy" />
+              ))}
+              <span className="avatar-more">12+</span>
+            </div>
+          </div>
+          <div className="team-top-right">
+            <h2>MEET OUR TEAM.</h2>
+            <p className="lead">Each member of our team brings a unique set of skills and perspectives, blending together to forge a collective that thrives on pushing the boundaries.</p>
+          </div>
+        </div>
+        <div className="team-main">
+          <motion.div className="recognition" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+            <span className="sparkle">✦</span>
+            <p className="section-label">Global Recognition</p>
+            <h3>We thrive to create design that make impact not just impressions.</h3>
+          </motion.div>
+          <motion.div className="team-portrait" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+            <div className="img-wrap">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <motion.img src={teamPortrait} alt="Team portrait" loading="lazy" style={{ y }} />
+            </div>
+          </motion.div>
         </div>
         <div className="team-stats">
-          <div className="stat"><b>4.9/5</b><span>Client Reviews</span></div>
-          <div className="stat"><b>2k+</b><span>Product Launch</span></div>
-          <div className="stat"><b>35+</b><span>Ready Teammates</span></div>
+          <div className="stat"><span>Client Reviews</span><b>4.9/5</b></div>
+          <div className="stat"><span>Product Launch</span><b>2k+</b></div>
+          <div className="stat"><span>Ready Teammates</span><b>35+</b></div>
         </div>
-        <motion.div className="recognition" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <div><p className="section-label">Global Recognition</p><h3>We thrive to create design that make impact not just impressions.</h3></div>
-          <button className="arrow-pill">↗</button>
-        </motion.div>
       </div>
     </section>
   );

@@ -7,9 +7,8 @@ const words = TEXT.split(" ");
 
 function Word({ word, progress, range }: { word: string; progress: MotionValue<number>; range: [number, number] }) {
   const opacity = useTransform(progress, range, [0.15, 1]);
-  const hl = ["bold", "identities", "beautiful", "functional"].includes(word.replace(",", ""));
   return (
-    <motion.span className={`w${hl ? " hl" : ""}`} style={{ opacity }}>{word}</motion.span>
+    <motion.span className="w" style={{ opacity }}>{word}</motion.span>
   );
 }
 

@@ -2,26 +2,26 @@ export const heroPills = ["Search Engine Optimization", "Branding Strategy", "Pr
 export const heroText = "We build brands that shape places and move people. We partner with bold thinkers who see design as a catalyst for change - visionaries who shape places and redefine spaces.";
 
 export const portfolio = [
-  { title: "Contra Materia", cat: "Branding", img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop", bg: "#1A2BFF" },
-  { title: "Dexa Technology", cat: "Product Design", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop", bg: "#161616" },
-  { title: "Mana Hotels", cat: "Branding", img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop", bg: "#8B2E2E" },
-  { title: "Noise Headphone", cat: "Product Design", img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200&auto=format&fit=crop", bg: "#161616" },
-  { title: "Centrica", cat: "Digital Marketing", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop", bg: "#D6FF3F" },
-  { title: "Sandstone Sim", cat: "Branding", img: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop", bg: "#161616" },
+  { title: "Contra Materia", cat: "Branding", img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop", bg: "#14261a" },
+  { title: "Dexa Technology", cat: "Product Design", img: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200&auto=format&fit=crop", bg: "#1a2bff" },
+  { title: "Mana Hotels", cat: "Branding", img: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1200&auto=format&fit=crop", bg: "#6e1f1f" },
+  { title: "Noise Headphone", cat: "Product Design", img: "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200&auto=format&fit=crop", bg: "#111111" },
+  { title: "Centrica", cat: "Digital Marketing", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop", bg: "#161616" },
+  { title: "Sandstone Sim", cat: "Branding", img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop", bg: "#161616" },
 ];
 
 export const services = [
-  { n: "01", title: "Digital Marketing", desc: "Data-driven campaigns that grow reach, traffic and revenue across every channel that matters.", shape: "sphere" },
-  { n: "02", title: "Product Design", desc: "Interfaces and experiences that are beautiful, functional and built around real people.", shape: "torus" },
-  { n: "03", title: "Search Engine Optimization", desc: "Technical and content SEO that lifts rankings, authority and organic visibility.", shape: "cone" },
+  { n: "01", title: "Digital Marketing", desc: "Amplify your online presence with our performance-driven digital marketing services.", shape: "chrome-x" },
+  { n: "02", title: "Product Design", desc: "Transform your vision into a market-ready digital product. From concept to market reality, ensuring it looks beautiful, perfectly.", shape: "spring" },
+  { n: "03", title: "Search Engine Optimization", desc: "Optimize your website's structure, content and performance to increase organic search rankings and scale revenue.", shape: "cubes" },
 ];
 
 export const approach = [
-  { title: "Innovative Creativity", desc: "We merge art and technology to craft bold, original solutions that set brands apart.", white: false },
-  { title: "Collaborative Partnership", desc: "Your vision unites with our expertise — we build together, every step of the way.", white: false },
-  { title: "Results-Driven Strategy", desc: "We focus on delivering tangible, measurable results that move your business forward.", white: true },
-  { title: "Transparent Communication", desc: "We maintain open, honest dialogue so you always know where your project stands.", white: false },
-  { title: "Passion for Impact", desc: "We are driven by creativity and a desire to make work that truly matters.", white: false },
+  { title: "Innovative Creativity", desc: "We merge art and technology to create solutions that break the mold and capture attention.", white: false },
+  { title: "Collaborative Partnership", desc: "Your vision unites to form a powerful team, ensuring that every project reflects your unique identity.", white: true },
+  { title: "Results-Driven Strategy", desc: "We focus on delivering tangible, measurable results that drive your brand's success.", white: false },
+  { title: "Transparent Communication", desc: "We maintain open, honest dialogue throughout every step of the way, ensuring you're always in the loop.", white: false },
+  { title: "Passion for Impact", desc: "Driven by creativity and a commitment to excellence — work that not only looks impressive, but makes a real impact.", white: false },
 ];
 
 export const testimonials = [
@@ -40,9 +40,9 @@ export const awards = [
 ];
 
 export const blog = [
-  { title: "5 Steps to Create an Outstanding Marketing Plan", cat: "Marketing", date: "May 7, 2026", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" },
-  { title: "Play to Your Strengths and Supercharge Business", cat: "Marketing", date: "May 7, 2026", img: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" },
-  { title: "Become a Graphic Designer in 10 Simple Steps", cat: "Design", date: "May 7, 2026", img: "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200&auto=format&fit=crop" },
+  { title: "5 Steps to Create an Outstanding Marketing Plan", cat: "Marketing", date: "May 7, 2026", img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop" },
+  { title: "Play to Your Strengths and Supercharge Business", cat: "Marketing", date: "May 7, 2026", img: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1200&auto=format&fit=crop" },
+  { title: "Become a Graphic Designer in 10 Simple Steps", cat: "Design", date: "May 7, 2026", img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop" },
 ];
 
 export const teamImgs = [
@@ -51,3 +51,7 @@ export const teamImgs = [
   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1200&auto=format&fit=crop",
 ];
+
+export const teamPortrait = "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1200&auto=format&fit=crop";
+export const testiLeft = "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop";
+export const testiRight = "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1200&auto=format&fit=crop";

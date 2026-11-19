@@ -6,7 +6,7 @@ export default function Blog() {
   return (
     <section className="blog">
       <div className="container">
-        <p className="section-label">Journal</p>
+        <p className="section-label">• Our Blog</p>
         <h2>Latest creative thinking journals.</h2>
         <div className="blog-grid">
           {blog.map((b, i) => (
@@ -18,9 +18,8 @@ export default function Blog() {
                 <img src={b.img} alt={b.title} loading="lazy" />
               </div>
               <div className="meta">
-                <span className="cat">{b.cat}</span>
+                <span className="blog-meta">{b.cat} | {b.date}</span>
                 <h3>{b.title}</h3>
-                <span className="date">{b.date}</span>
               </div>
             </motion.article>
           ))}

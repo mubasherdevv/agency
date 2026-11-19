@@ -7,7 +7,7 @@ export default function Awards() {
     <section className="awards">
       <div className="container">
         <p className="section-label">Recognition</p>
-        <h2>Awards &amp; Mentions</h2>
+        <h2>Awards<br />Recognition</h2>
         {awards.map((a, i) => (
           <motion.div key={a.year + a.title} className="award-row"
             initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
